@@ -135,14 +135,14 @@
         list-style: none;
 
     }
-    #course .c_con .c_ul li{
+    #course .c_con .c_ul .c_li{
         border:1px solid green;
         float: left;/*将块级元素转化为行内块元素*/
         width: 300px;
     }
-    #course .c_con .c_ul li .c_icon{
+    #course .c_con .c_ul .c_li .c_icon{
         background: url("images/index_classet_btn.png") no-repeat;
-        border:1px solid red;
+        /*border:1px solid red;*/
         display: block;/*span内联元素，将内联元素块级元素*/
         width: 92px;
         height: 92px;
@@ -151,9 +151,17 @@
         text-align: center;
         line-height: 92px;
         float: left;
+        margin-right: 15px;
     }
-    #course .c_con .c_ul li .i_1{
+    #course .c_con .c_ul .c_li .i_1{
         background-position: -18px -10px;
+    }
+    #course .c_con .c_ul .c_li .c_item{
+        margin-top: 12px;
+    }
+    #course .c_con .c_ul .c_li .c_title{
+        font-weight:bold;
+        margin: 8px 0;
     }
 
     /*course end*/
@@ -199,14 +207,14 @@
 <div id="course">
     <div class="c_con">
         <ul class="c_ul">
-            <li>
+            <li class="c_li">
                 <span class="c_icon i_1">20:00</span>
-                <p>开设课程：</p>
-                <h3>VIP零基础到项目实战</h3>
-                <p>技术总监：蓝桥老师</p>
+                <p class="c_item">开设课程：</p>
+                <h3 class="c_title">VIP零基础到项目实战</h3>
+                <p class="c_teacher">技术总监：蓝桥老师</p>
             </li>
-            <li>2</li>
-            <li>3</li>
+            <!--<li>2</li>-->
+            <!--<li>3</li>-->
         </ul>
     </div>
 
