@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>潭州教育首页</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin:0;
+    }
+    body{
+        background: url('images/bg.png');
+        font-size: 12px;
+        font-family:'微软雅黑';
+    }
+    
+    /*start top*/
+    .top{
+        width: 100%;
+        height: 80px;
+        background-color: #fff
+    }
+    .top .head{
+        width: 1000px;
+        height: 80px;
+        margin:0 auto;
+        /*border:1px solid #f00;*/
+    }
+    .top .head .logo{
+        float: left;
+        margin-top: 7px;
+    }
+    .top .head .logo a{
+        display: block;
+    }
+    .top .head .nav{
+
+    }
+    .top .head .nav .n_ul{
+        list-style: none;
+    }
+    .top .head .nav .n_ul li{
+        float: left;
+        line-height: 80px;
+    }
+    .top .head .nav .n_ul a{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight:bold;
+        color: #666;
+        margin-left: 18px;
+        padding-bottom: 2px;
+    }
+    .top .head .nav .n_ul .n_sel{
+        border-bottom:3px solid #D03D43;
+    }
+    .top .head .nav .n_ul a:hover{
+        border-bottom:3px solid #D03D43;
+    }
+    .top .head .share{
+        float: right;
+    }
+    .top .head .share a{
+        width: 38px;
+        height: 38px;
+        display: block;
+        float: left;
+        margin-right: 12px;
+        margin-top: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .top .head .share .s_wb span{
+        background-position: 5px 8px;;
+    }
+    .top .head .share .s_wx span{
+        background-position: -40px 8px;;
+    }
+    .top .head .share .s_qq span{
+        background-position: -78px 8px;;
+    }
+    .top .head .share a span{
+        width: 38px;
+        height: 85px;
+        display: block;
+        background: url("images/wei.png") no-repeat;
+        position: absolute;
+    }
+    /*top end*/
+    
+    /*start banner*/
+    #banner{
+        width:100%;
+        height: 22px;
+        background: url("images/1.jpg") no-repeat bottom center;
+        padding-top: 218px;
+    }
+    #banner .b_btn{
+        width: 87px;
+        height: 22px;
+        margin:0 auto;
+    }
+    #banner .b_btn .b_ul {
+        list-style: none;
+        display: inline-block;
+        border-radius: 11px;
+        background: rgba(0,0,0,.5);
+        padding: 0px 22px;
+    }
+    #banner .b_btn .b_ul li{
+        /*border:1px solid #A33;*/
+        float: left;
+        width: 16px;
+        height: 16px;
+        background: url("images/1.png") no-repeat center;
+        margin: 1px 2px;
+        cursor: pointer;
+    }
+    #banner .b_btn .b_ul .b_sel{
+        background: url("images/2.png") no-repeat center;
+    }
+    /*banner end*/
+
+    /*start course*/
+    #course{
+        width: 1000px;
+        height: 219px;
+        background: url("images/course-index.png") no-repeat center;
+        margin:50px auto;
+    }
+    #course .c_con .c_ul{
+        border:1px solid green;
+        list-style: none;
+
+    }
+    #course .c_con .c_ul li{
+        border:1px solid green;
+        float: left;/*将块级元素转化为行内块元素*/
+        width: 300px;
+    }
+    #course .c_con .c_ul li .c_icon{
+        background: url("images/index_classet_btn.png") no-repeat;
+        border:1px solid red;
+        display: block;/*span内联元素，将内联元素块级元素*/
+        width: 92px;
+        height: 92px;
+        font-size: 26px;
+        color: #fff;
+        text-align: center;
+        line-height: 92px;
+        float: left;
+    }
+    #course .c_con .c_ul li .i_1{
+        background-position: -18px -10px;
+    }
+
+    /*course end*/
+
+</style>
+<body>
+<!--start top-->
+<div class="top">
+    <div class="head">
+        <div class="logo">
+            <a href=""><img src="images/logo.png" alt="潭州教育" style="width: 215px;height: 66px;"></a>
+        </div>
+        <div class="nav">
+            <ul class="n_ul">
+                <li><a class="n_sel" href="">首页</a></li>
+                <li><a href="">WEB前端课题体系</a></li>
+                <li><a href="">教程下载</a></li>
+                <li><a href="">公开课</a></li>
+                <li><a href="">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="share">
+            <a href="" class="s_wb"><span></span></a>
+            <a href="" class="s_wx"><span></span></a>
+            <a href="" class="s_qq"><span></span></a>
+        </div>
+    </div>
+</div>
+<!--end top-->
+
+<!--banner start-->
+<div id="banner">
+    <div class="b_btn">
+        <ul class="b_ul">
+            <li class="b_sel"></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+<!--end banner-->
+
+<!--course start-->
+<div id="course">
+    <div class="c_con">
+        <ul class="c_ul">
+            <li>
+                <span class="c_icon i_1">20:00</span>
+                <p>开设课程：</p>
+                <h3>VIP零基础到项目实战</h3>
+                <p>技术总监：蓝桥老师</p>
+            </li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+
+</div>
+<!--end course-->
+
+</body>
+<!--引用jquery类库-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+    <!--鼠标悬浮在分享-->
+    $('.top .share a').hover(
+        function () {
+            var _this = $(this);
+            $('.top .share a').each(function (i) {
+                if(_this[0] == $(this)[0]){
+                    if( i == 0 ){
+                        $(this).css('background','#E6162D');
+                    }else if(i == 1){
+                        $(this).css('background','#0e71b7');
+                    }else if(i == 2){
+                        $(this).css('background','#666');
+                    }
+                    $(this).css('border-radius',4);
+                    $(this).find('span').animate({'top': -48});
+                }
+            });
+        },
+        function () {
+            var _this = $(this);
+            _this.find('span').animate({'top':0},function () {
+                _this.css('background','none');
+            })
+        }
+    )
+    //banner切换效果
+    $('.b_btn').find('li').hover(
+        function () {
+            var _this = $(this);
+            $(this).addClass('b_sel').siblings('li').removeClass('b_sel');
+            $('.b_btn').find('li').each(function (i) {
+                if(_this[0] == $(this)[0]){
+                    console.log("I:"+i);
+                    $('#banner').fadeOut(500,function () {//通过不透明变化实现所有匹配元素的淡出效果，并在动画完成后触发一个回调函数
+                        $(this).css('background','url(images/'+(i+1)+'.jpg) no-repeat top center').fadeIn(500)
+                    })
+                }
+            })
+        }
+    )
+</script>
+
+</html>
